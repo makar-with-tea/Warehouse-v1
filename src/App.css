@@ -1,0 +1,21 @@
+/* Основные стили для корневого элемента */
+:root {
+  display: flex;
+  flex-direction: column;
+  /* Выравнивание по центру */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(51, 28, 71);
+}
+
+/* Стили для заголовка 1 уровня */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,19 @@
+/* Контейнер для списка продуктов */
+.product-list {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Адаптивные колонки */
+  gap: 20px; /* Расстояние между элементами */
+  justify-content: flex-start; /* Выравнивание элементов по началу */
+}
+
+/* Индивидуальный элемент продукта */
+.product-list > div {
+  cursor: pointer; /* Изменение курсора при наведении */
+  transition: transform 0.2s ease; /* Плавный переход трансформации */
+}
+
+/* Увеличение элемента продукта при наведении */
+.product-list > div:hover {
+  transform: scale(1.05);
+}

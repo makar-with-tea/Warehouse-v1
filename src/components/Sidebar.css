@@ -1,0 +1,57 @@
+/* Стили для бокового меню */
+.sidebar {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #492d63;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Расположение под верхней панелью */
+  transform: translateX(-100%); /* Скрываем меню за пределами экрана */
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+
+/* Открытие бокового меню */
+.sidebar.open {
+  transform: translateX(0); /* Показываем меню */
+}
+
+/* Стили для заголовка бокового меню */
+.sidebar label {
+  display: block; /* Каждое поле на новой строке */
+  margin-bottom: 15px; /* Отступ между компонентами */
+}
+
+/* Стили для текстового поля и чекбокса */
+.sidebar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(45, 28, 59);
+}
+
+/* Стили для чекбокса */
+.sidebar input[type="checkbox"] {
+  accent-color: #c88eff; /* Цвет выбранного чекбокса */
+}
+
+/* Стили для выпадающего меню */
+.sidebar select {
+  width: 100%; /* Выпадающее меню на всю ширину */
+  padding: 5px; /* Внутренние отступы выпадающего меню */
+  background-color: rgb(45, 28, 59);
+}
+
+/* Стили для элементов выпадающего меню */
+.sidebar select option {
+  background-color: rgb(45, 28, 59);
+  color: white;
+}
+
+/* Изменение цвета элемента выпадающего меню при наведении */
+.sidebar select option:hover {
+  background-color: #e6b0ff; /* Цвет выбранного элемента */
+  color: rgb(46, 11, 59); /* Цвет текста выбранного элемента */
+}

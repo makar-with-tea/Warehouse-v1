@@ -1,0 +1,89 @@
+.product-card {
+  border: 1px solid #ccc; /* Границы карточки */
+  border-radius: 8px;
+  padding: 8px;
+  width: 250px;
+  height: 400px; 
+  justify-content: center;
+  overflow: hidden; /* Обрезаем контент, если он больше карточки */
+}
+
+/* Стили для контейнера изображения товара */
+.product-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden; /* Обрезаем изображение, если оно больше контейнера */
+  margin: 0 auto; /* Центрируем изображение */
+  margin-bottom: 16px; /* Отступ снизу для изображения */
+  position: relative; /* Позиционирование изображения */
+  border-radius: 8px;
+}
+
+/* Стили для изображения товара */
+.product-image img {
+  position: absolute;
+  top: 50%; /* Положение изображения по вертикали */
+  left: 50%; /* Положение изображения по горизонтали */
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: contain; /* Сохранение пропорций изображения */
+  transform: translate(-50%, -50%); /* Центрирование изображения */
+}
+
+/* Стили для названия товара */
+.product-name {
+  display: -webkit-box; /* Флекс-контейнер для обрезки */
+  font-weight: bold; /* Жирный шрифт для названия товара */
+  font-size: 1.2em; /* Размер шрифта */
+  margin-bottom: 8px;
+  -webkit-box-orient: vertical; /* Вертикальное направление для обрезки */
+  overflow: hidden; /* Скрытие переполненного контента */
+  -webkit-line-clamp: 1; /* Ограничение по строкам */
+  line-clamp: 1; /* Ограничение по строкам */
+  height: 8%; /* Высота блока с названием в процентах от родительского элемента */
+}
+
+/* Стили для описания товара */
+.product-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  max-height: 4.5em;
+  line-height: 1.6em;
+  margin: 8px 0;
+  border-radius: 8px;
+  color: #262626;
+  min-height: 20%; /* Минимальная высота блока с описанием в процентах от родительского элемента */
+  height: 20%;
+  background-color: #a573c6;
+}
+
+/* Стили для цены товара */
+.product-category {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  font-size: 0.8em;
+  margin: 4px 0;
+  color: #909090;
+  min-height: 6%;
+  height: 6%;
+}
+
+/* Стили для количества товара */
+.product-quantity {
+  display: -webkit-box;
+  margin: 4px 0;
+  color: #909090;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  min-height: 6%;
+  height: 6%;
+}
